@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Calculator</title>
+</head>
+<body>
+<h1>⟪«~Time Calculator~»⟫</h1>
+<hr>
+	Insert Time : <input type="number" id="operandOne" placeholder="base numbers only">
+	<hr>
+	⫷ <button onclick="add()">Add 1 Second</button> ◈ 
+	<button onclick="subtraction()">Subtract 1 Second</button> ⫸
+	<br>
+	<br>
+	<hr>
+	Insert Time : <input type="number" id="operandTwo" placeholder="base numbers only">
+	<hr>
+	⫷ <button onclick="add()">Add 1 Minute</button> ◈
+	<button onclick="subtraction()">Subtract 1 Minute</button> ⫸
+	<br>
+	<br>
+	<hr>
+	Insert Time : <input type="number" id="Three" placeholder="base numbers only">
+	<hr>
+	⫷ <button onclick="multiply()">Add 1 Hour</button> ◈
+	<button onclick="divide()">Subtract 1 Hour</button> ⫸
+</body>
+<script type="text/javascript">
+	let x;
+	let y;
+	function add(){
+		let x = parseInt(document.getElementById("operandOne").value);
+		let y = 1
+		alert(x + y);
+	}
+	function subtraction(){
+		let x = parseInt(document.getElementById("operandOne").value);
+		let y = 1
+		alert(x - y);
+	}
+	function add(){
+		let x = parseInt(document.getElementById("operandTwo").value);
+		let y = 60
+		alert(x + y);
+	}
+	function subtraction(){
+		let x = parseInt(document.getElementById("operandTwo").value);
+		let y = 60
+		alert(x - y);
+	}
+	function multiply(){
+		let x = parseInt(document.getElementById("Three").value);
+		let y = 60
+		alert(x * y);
+	}
+	function divide(){
+		let x = parseInt(document.getElementById("Three").value);
+		let y = 60
+		alert(x / y);
+	}
+</script>
+</html>
+</body>
+</html>
